@@ -1,0 +1,202 @@
+body {
+    height: 100vh;
+    font-family: 'Code Font';
+}
+
+.row,
+.row>*,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    display: flex;
+    height: 6%;
+    background-color: white;
+    align-items: center;
+    margin: 0 20% 0 20%;
+}
+
+.body {
+    padding: 0 20% 0 20%;
+    height: 94%;
+    background-color: rgb(249, 249, 249);
+}
+
+.welcome {
+    height: 40%;
+}
+
+.welcome img {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome .conversation {
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    display: flex;
+}
+
+.welcome .profile-photo {
+    width: 13%;
+    height: 13%;
+    border: solid 7px #333333;
+}
+
+.welcome .nes-balloon {
+    width: 57%;
+    padding: 1rem 1.5rem;
+    margin: 5% 0 1% 0.3%;
+    border: solid 7px #333333;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #fff;
+    /* cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer */
+}
+
+.nes-balloon b {
+    font-style: normal !important;
+    border-right: .15em solid #333333;
+    animation:
+        blink-caret 1s step-end infinite;
+}
+
+.nes-balloon h3 {
+    margin: 10px 0 0 0;
+    display: flex;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #333333
+    }
+}
+
+.body .skills {
+    margin-top: 6%;
+}
+
+.card-profile {
+    position: relative;
+    margin-bottom: 3%;
+    border: solid 7px #333333;
+    padding: 15px 15px 15px 15px;
+}
+
+.skills .card-profile .header-card {
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background-color: rgb(249, 249, 249);
+    padding: 0 10px 0 10px;
+}
+
+.skills .card-left {
+    margin-right: 3%;
+}
+
+.progress-bar {
+    border: solid 7px #333333;
+    padding: 5px;
+}
+
+.progress-bar div {
+    border: solid 7px #000000;
+}
+
+.progress-red {
+    border-color: #e63f3f !important;
+}
+
+.progress-blue {
+    border-color: #25458f !important;
+}
+
+.progress-yellow {
+    border-color: #d0d02d !important;
+}
+
+.progress-green {
+    border-color: #38d154 !important;
+}
+
+.skill .row {
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.personal-data {
+    font-size: 13px;
+}
+
+.personal-data img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.personal-data .char {
+    height: 110px;
+    object-fit: contain;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.datas img {
+    width: 30px;
+}
+
+.datas .row {
+    align-items: center;
+}
+
+.datas .row .col {
+    padding-left: 15px;
+}
+
+.main-data {
+    text-align: center;
+    align-items: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.email {
+    font-size: 11px;
+}
